@@ -1,0 +1,47 @@
+export declare const configuration: import("redux").Reducer<import("../features/configuration/configuration-state").ConfigurationState, import("redux").AnyAction>;
+export declare const pagination: import("redux").Reducer<import("../features/pagination/pagination-state").PaginationState, import("redux").AnyAction>;
+export declare const facetSet: import("redux").Reducer<import("../features/facets/facet-set/facet-set-state").FacetSetState, import("redux").AnyAction>;
+export declare const facetSearchSet: import("redux").Reducer<import("../features/facets/facet-search-set/specific/specific-facet-search-set-state").SpecificFacetSearchSetState, import("redux").AnyAction>;
+export declare const search: import("redux").Reducer<import("../features/search/search-state").SearchState, import("redux").AnyAction>;
+export declare const folding: import("redux").Reducer<import("../features/folding/folding-state").FoldingState, import("redux").AnyAction>;
+export declare const dateFacetSet: import("redux").Reducer<import("../features/facets/range-facets/date-facet-set/date-facet-set-state").DateFacetSetState, import("redux").AnyAction>;
+export declare const facetOrder: import("redux").Reducer<import("../features/facets/facet-order/facet-order-state").FacetOrderState, import("redux").AnyAction>;
+export declare const numericFacetSet: import("redux").Reducer<import("../features/facets/range-facets/numeric-facet-set/numeric-facet-set-state").NumericFacetSetState, import("redux").AnyAction>;
+export declare const categoryFacetSet: import("redux").Reducer<import("../features/facets/category-facet-set/category-facet-set-state").CategoryFacetSetState, import("redux").AnyAction>;
+export declare const facetOptions: import("redux").Reducer<import("../features/facet-options/facet-options-state").FacetOptionsState, import("redux").AnyAction>;
+export declare const categoryFacetSearchSet: import("redux").Reducer<import("../features/facets/facet-search-set/category/category-facet-search-set-state").CategoryFacetSearchSetState, import("redux").AnyAction>;
+export declare const query: import("redux").Reducer<import("../features/query/query-state").QueryState, import("redux").AnyAction>;
+export declare const advancedSearchQueries: import("redux").Reducer<import("../features/advanced-search-queries/advanced-search-queries-state").AdvancedSearchQueriesState, import("redux").AnyAction>;
+export declare const staticFilterSet: import("redux").Reducer<import("../features/static-filter-set/static-filter-set-state").StaticFilterSetState, import("redux").AnyAction>;
+export declare const querySet: import("redux").Reducer<import("../features/query-set/query-set-state").QuerySetState, import("redux").AnyAction>;
+export declare const tabSet: import("redux").Reducer<import("../features/tab-set/tab-set-state").TabSetState, import("redux").AnyAction>;
+/**
+ * @deprecated - The `redirection` functionality is now handled by the `standaloneSearchBoxSet`.
+ */
+export declare const redirection: import("redux").Reducer<import("../features/redirection/redirection-state").RedirectionState, import("redux").AnyAction>;
+export declare const querySuggest: import("redux").Reducer<import("../features/query-suggest/query-suggest-state").QuerySuggestSet, import("redux").AnyAction>;
+export declare const sortCriteria: import("redux").Reducer<string, import("redux").AnyAction>;
+export declare const context: import("redux").Reducer<import("../features/context/context-state").ContextState, import("redux").AnyAction>;
+export declare const dictionaryFieldContext: import("redux").Reducer<import("../features/dictionary-field-context/dictionary-field-context-state").DictionaryFieldContextState, import("redux").AnyAction>;
+export declare const didYouMean: import("redux").Reducer<import("../features/did-you-mean/did-you-mean-state").DidYouMeanState, import("redux").AnyAction>;
+export declare const fields: import("redux").Reducer<import("../features/fields/fields-state").FieldsState, import("redux").AnyAction>;
+export declare const pipeline: import("redux").Reducer<string, import("redux").AnyAction>;
+export declare const searchHub: import("redux").Reducer<string, import("redux").AnyAction>;
+export declare const debug: import("redux").Reducer<boolean, import("redux").AnyAction>;
+export declare const resultPreview: import("redux").Reducer<import("../features/result-preview/result-preview-state").ResultPreviewState, import("redux").AnyAction>;
+export declare const version: import("redux").Reducer<string, import("redux").AnyAction>;
+export declare const triggers: import("redux").Reducer<import("../features/triggers/triggers-state").TriggerState, import("redux").AnyAction>;
+export declare const questionAnswering: import("redux").Reducer<import("../features/question-answering/question-answering-state").QuestionAnsweringState, import("redux").AnyAction>;
+export declare const standaloneSearchBoxSet: import("redux").Reducer<import("../features/standalone-search-box-set/standalone-search-box-set-state").StandaloneSearchBoxSetState, import("redux").AnyAction>;
+export declare const recentResults: import("redux").Reducer<import("../features/recent-results/recent-results-state").RecentResultsState, import("redux").AnyAction>;
+export declare const recentQueries: import("redux").Reducer<import("../features/recent-queries/recent-queries-state").RecentQueriesState, import("redux").AnyAction>;
+export declare const history: (state: import("./undoable").StateWithHistory<import("../features/history/history-state").HistoryState> | undefined, action: import("redux").AnyAction) => import("./undoable").StateWithHistory<import("../features/history/history-state").HistoryState>;
+export declare const recommendation: import("redux").Reducer<import("../features/recommendation/recommendation-state").RecommendationState, import("redux").AnyAction>;
+export declare const productRecommendations: import("redux").Reducer<import("../features/product-recommendations/product-recommendations-state").ProductRecommendationsState, import("redux").AnyAction>;
+export declare const productListing: import("redux").Reducer<import("../features/product-listing/product-listing-state").ProductListingState, import("redux").AnyAction>;
+export declare const sort: import("redux").Reducer<import("../product-listing.index").SortCriterion, import("redux").AnyAction>;
+export declare const caseAssistConfiguration: import("redux").Reducer<import("../features/case-assist-configuration/case-assist-configuration-state").CaseAssistConfigurationState, import("redux").AnyAction>;
+export declare const caseInput: import("redux").Reducer<import("../features/case-input/case-input-state").CaseInputState, import("redux").AnyAction>;
+export declare const caseField: import("redux").Reducer<import("../features/case-field/case-field-state").CaseFieldState, import("redux").AnyAction>;
+export declare const documentSuggestion: import("redux").Reducer<import("../features/document-suggestion/document-suggestion-state").DocumentSuggestionState, import("redux").AnyAction>;
+export declare const excerptLength: import("redux").Reducer<import("../features/excerpt-length/excerpt-length-state").ExcerptLengthState, import("redux").AnyAction>;

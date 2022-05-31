@@ -1,0 +1,24 @@
+.breadcrumb-manager__line {
+  align-items: baseline;
+  min-width: 0;
+}
+
+.slds-grid div.breadcrumb-manager__column {
+  padding: 0;
+}
+
+.breadcrumb-manager__field-name {
+  white-space: nowrap;
+}
+
+.breadcrumb-manager__more-button:hover {
+  color: var(--color-text-action-label);
+}
+
+.breadcrumb__container {
+  min-width: 0;
+}
+
+.breadcrumb-manager__clear-button a {
+  white-space: nowrap;
+}

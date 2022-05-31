@@ -1,0 +1,37 @@
+import { PayloadAction } from '@reduxjs/toolkit';
+import { SearchEngine } from '../../app/search-engine/search-engine';
+import { UpdateFacetOptionsActionCreatorPayload, EnableFacetActionCreatorPayload, DisableFacetActionCreatorPayload } from './facet-options-actions';
+export type { UpdateFacetOptionsActionCreatorPayload, EnableFacetActionCreatorPayload, DisableFacetActionCreatorPayload, };
+/**
+ * The facetOptions action creators.
+ */
+export interface FacetOptionsActionCreators {
+    /**
+     * Updates options that affect facet reordering. For more information, refer to [the documentation on query parameters](https://docs.coveo.com/en/1461/build-a-search-ui/query-parameters#definitions-RestFacetOptions).
+     *
+     * @param payload - The action creator payload.
+     * @returns A dispatchable action.
+     */
+    updateFacetOptions(payload: UpdateFacetOptionsActionCreatorPayload): PayloadAction<UpdateFacetOptionsActionCreatorPayload>;
+    /**
+     * Enables a facet. I.e., undoes the effects of `disable`.
+     *
+     * @param facetId - The unique identifier of the facet (e.g., "abcd").
+     * @returns A dispatchable action.
+     */
+    enableFacet(facetId: string): PayloadAction<string>;
+    /**
+     * Disables a facet. I.e., prevents it from filtering results.
+     *
+     * @param facetId - The unique identifier of the facet (e.g., "1").
+     * @returns A dispatchable action.
+     */
+    disableFacet(facetId: string): PayloadAction<string>;
+}
+/**
+ * Loads the `facetOptions` reducer and returns possible action creators.
+ *
+ * @param engine - The headless engine.
+ * @returns An object holding the action creators.
+ */
+export declare function loadFacetOptionsActions(engine: SearchEngine): FacetOptionsActionCreators;
